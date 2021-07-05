@@ -22,15 +22,12 @@ app.listen(3000, () => {
 
   // GET request for values that make you happy 
   app.get('/happiness', function (req, res) {
-    return res.send(happyArr);
+    // @TODO: include GET request
   });
 
   // POST request - can edit on Postman
   app.post('/happiness', function(req, res) {
-      var happy = req.body;
-      console.log(happy);
-      happyArr.push(happy);
-      res.send("An item that makes you happy was added :)");
+     // @TODO: include POST request
   });
 
   app.put('/happiness', function(req, res) {
